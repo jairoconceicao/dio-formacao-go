@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Corporativo Institucional</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0f172a;
+        --color-secondary: #1d4ed8;
+        --color-accent: #38bdf8;
+        --color-surface: #f8fafc;
+        --color-muted: #64748b;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-slate-900 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm sticky top-0 z-20">
+        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+          <a href="#home" class="text-xl font-semibold tracking-tight text-primary">MarcaCorp</a>
+          <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+            <a href="#catalogo" class="hover:text-secondary transition">Catálogo</a>
+            <a href="#servicos" class="hover:text-secondary transition">Serviços</a>
+            <a href="#sobre" class="hover:text-secondary transition">Sobre</a>
+            <a href="#contato" class="hover:text-secondary transition">Contato</a>
+          </nav>
+          <button type="button" class="md:hidden rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-700 shadow-sm"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            Menu
+          </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white/95">
+          <div class="space-y-2 px-4 py-4">
+            <a href="#catalogo" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50">Catálogo</a>
+            <a href="#servicos" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50">Serviços</a>
+            <a href="#sobre" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50">Sobre</a>
+            <a href="#contato" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50">Contato</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section id="home" class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+          <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div class="grid gap-10 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
+              <div>
+                <p class="mb-4 inline-flex rounded-full bg-secondary/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Soluções Corporativas</p>
+                <h1 class="text-4xl font-semibold sm:text-5xl lg:text-6xl">Experiência estratégica para impulsionar sua marca.</h1>
+                <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-200">Somos um parceiro institucional que entrega projetos digitais e serviços corporativos com design moderno, eficiência e confiança.</p>
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                  <a href="#contato" class="inline-flex items-center justify-center rounded-full bg-secondary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-secondary/20 hover:bg-blue-600 transition">Fale conosco</a>
+                  <a href="#catalogo" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white hover:border-white hover:bg-white/15 transition">Conheça o catálogo</a>
+                </div>
+              </div>
+              <div class="rounded-[2rem] bg-white/5 p-10 ring-1 ring-white/10 backdrop-blur-xl">
+                <div class="space-y-6">
+                  <div class="rounded-3xl bg-slate-950/90 p-6 shadow-xl shadow-slate-950/20">
+                    <h2 class="text-xl font-semibold text-white">Portal Empresarial</h2>
+                    <p class="mt-3 text-slate-300">Soluções digitais, consultoria de processos e atendimento premium para negócios em crescimento.</p>
+                  </div>
+                  <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-3xl bg-slate-900/80 p-5">
+                      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Crescimento</p>
+                      <p class="mt-3 text-lg font-semibold text-white">Estratégia</p>
+                    </div>
+                    <div class="rounded-3xl bg-slate-900/80 p-5">
+                      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Valor</p>
+                      <p class="mt-3 text-lg font-semibold text-white">Inovação</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="catalogo" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mb-12 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Catálogo</p>
+            <h2 class="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl">Nossas soluções de produtos</h2>
+            <p class="mt-4 mx-auto max-w-2xl text-slate-600">Explore o portfólio com serviços e produtos desenhados para equipes corporativas exigentes.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-slate-900">Experiência Digital</h3>
+              <p class="mt-3 text-slate-600">Design de interface, plataformas web e aplicativos com performance e usabilidade corporativa.</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-slate-900">Comunicação Visual</h3>
+              <p class="mt-3 text-slate-600">Marca, materiais institucionais e campanhas que fortalecem a presença corporativa.</p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition">
+              <h3 class="text-xl font-semibold text-slate-900">Integridade Digital</h3>
+              <p class="mt-3 text-slate-600">Serviços de tecnologia e infraestrutura para operações seguras e escaláveis.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="servicos" class="bg-slate-950 text-white">
+          <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Serviços</p>
+                <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Serviços que transformam negócios em resultados.</h2>
+                <p class="mt-6 max-w-xl text-slate-300">Consultoria estratégica, implementação de projetos e suporte contínuo para garantir eficiência e entrega com excelência.</p>
+              </div>
+              <div class="grid gap-4">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900/90 p-6">
+                  <h3 class="text-lg font-semibold">Consultoria Corporativa</h3>
+                  <p class="mt-3 text-slate-400">Análise de processos, planejamento de jornada e tomada de decisão orientada a dados.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900/90 p-6">
+                  <h3 class="text-lg font-semibold">Implementação Digital</h3>
+                  <p class="mt-3 text-slate-400">Execução de projetos digitais com tecnologia moderna e foco em resultados mensuráveis.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900/90 p-6">
+                  <h3 class="text-lg font-semibold">Suporte Premium</h3>
+                  <p class="mt-3 text-slate-400">Acompanhamento contínuo para manter sua operação estável e preparada para o futuro.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sobre" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div class="space-y-6">
+              <p class="text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Sobre</p>
+              <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Uma parceira estratégica para empresas modernas.</h2>
+              <p class="text-slate-600">Com expertise em design, tecnologia e atendimento corporativo, entregamos soluções robustas alinhadas ao posicionamento e à cultura da sua organização.</p>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-3xl bg-slate-50 p-6 shadow-sm">
+                  <p class="text-4xl font-semibold text-secondary">12+</p>
+                  <p class="mt-2 text-sm text-slate-500">Anos de atuação</p>
+                </div>
+                <div class="rounded-3xl bg-slate-50 p-6 shadow-sm">
+                  <p class="text-4xl font-semibold text-secondary">120+</p>
+                  <p class="mt-2 text-sm text-slate-500">Projetos entregues</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[2rem] bg-gradient-to-br from-secondary/10 via-slate-100 to-slate-50 p-8 shadow-xl">
+              <h3 class="text-xl font-semibold text-slate-900">Missão</h3>
+              <p class="mt-4 text-slate-600">Fornecer soluções institucionais que aliem inovação, credibilidade e uma experiência digital de alto padrão.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contato" class="bg-slate-900 text-white">
+          <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-secondary">Contato</p>
+                <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Vamos iniciar sua próxima jornada corporativa.</h2>
+                <p class="mt-6 max-w-xl text-slate-300">Entre em contato para descobrir como podemos agregar valor à sua estratégia e impulsionar seus resultados.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-950/90 p-8 shadow-2xl shadow-slate-950/20 ring-1 ring-white/10">
+                <div class="space-y-6">
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-400">E-mail</p>
+                    <p class="mt-2 text-lg">contato@marcacorp.com</p>
+                  </div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Telefone</p>
+                    <p class="mt-2 text-lg">(11) 4000-1234</p>
+                  </div>
+                  <a href="mailto:contato@marcacorp.com" class="inline-flex w-full items-center justify-center rounded-full bg-secondary px-5 py-3 text-base font-semibold text-slate-950 hover:bg-blue-400 transition">Enviar mensagem</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-200 bg-white py-6">
+        <div class="mx-auto max-w-7xl px-4 text-center text-sm text-slate-500 sm:px-6 lg:px-8">
+          <p>&copy; 2026 MarcaCorp. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
